@@ -42,7 +42,6 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -70,7 +69,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
@@ -86,6 +84,7 @@
                         </exclude>
                     </excludes>
                 </configuration>
+                <version>${parent.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -111,6 +110,7 @@
                         <version>${kotlin.version}</version>
                     </dependency>
                 </dependencies>
+                <version>${kotlin.version}</version>
             </plugin>
         </plugins>
     </build>
