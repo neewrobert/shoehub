@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/data/grafana/grafana.db
+/data/grafana/alerting/1/__default__.tmpl
